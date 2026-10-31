@@ -2,25 +2,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CPA Marketer Sheikh Salman — Digital Marketing, Facebook Ads, CPA Marketing and Website Development.">
+  <meta name="description" content="CPA Marketer Sheikh Salman — Digital Marketing, Facebook Ads, CPA Marketing, SEO and Website Development.">
   <meta name="theme-color" content="#031a2d">
   <title>CPA Marketer Sheikh Salman | Digital Marketing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Safety rules for images and narrow screens */
+    img { max-width: 100%; }
+    .about-photo img { display: block; width: 100%; height: auto; object-fit: cover; }
+    .portfolio-grid { min-width: 0; }
+    .portfolio-grid img { max-width: 100%; }
+    @media (max-width: 768px) {
+      .container { width: min(100% - 32px, 100%); }
+      .hero-inner, .about-layout { grid-template-columns: 1fr; }
+      .portfolio-heading { gap: 20px; flex-wrap: wrap; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-grid img { width: 100%; height: auto; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="CPA Marketer Sheikh Salman home">
         <span class="brand-mark">SS</span>
-        <span class="brand-copy"><strong>CPA Marketer</strong><b>Sheikh Salman</b><small>Digital Marketing | CPA Marketing | Web Development</small></span>
+        <span class="brand-copy">
+          <strong>CPA Marketer</strong>
+          <b>Sheikh Salman</b>
+          <small>Digital Marketing | CPA Marketing | Web Development</small>
+        </span>
       </a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
       <nav class="main-nav" aria-label="Main navigation">
-        <a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+        <a class="active" href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </nav>
+
       <a class="button button-primary nav-hire" href="#contact">➤ &nbsp; Hire Me</a>
     </div>
   </header>
@@ -34,9 +60,17 @@
           <h1>CPA Marketer<br><span>Sheikh Salman</span></h1>
           <p class="hero-specialties">Digital Marketing&nbsp; | &nbsp;Facebook Ads&nbsp; | &nbsp;Website Development</p>
           <p class="hero-description">I help businesses grow online with result-driven digital marketing, CPA marketing, Facebook ads and modern website solutions.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#contact">➤ &nbsp; Hire Me</a><a class="button button-outline" href="#portfolio">▣ &nbsp; View Portfolio</a></div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">➤ &nbsp; Hire Me</a>
+            <a class="button button-outline" href="#portfolio">▣ &nbsp; View Portfolio</a>
+          </div>
+
           <div class="benefits">
-            <div><span>◎</span><p>More<br>Traffic</p></div><div><span>♧</span><p>Higher<br>Sales</p></div><div><span>⬡</span><p>Trusted<br>Service</p></div><div><span>◷</span><p>On-Time<br>Delivery</p></div>
+            <div><span>◎</span><p>More<br>Traffic</p></div>
+            <div><span>♧</span><p>Higher<br>Sales</p></div>
+            <div><span>⬡</span><p>Trusted<br>Service</p></div>
+            <div><span>◷</span><p>On-Time<br>Delivery</p></div>
           </div>
         </div>
         <div class="hero-person" role="img" aria-label="Digital marketer working at a laptop"></div>
@@ -46,18 +80,70 @@
     <section class="services section-light" id="services">
       <div class="container">
         <div class="section-heading">
-          <div><span class="section-kicker">— &nbsp; MY SERVICES &nbsp; —</span><h2>What <span>I Do</span></h2><p>I provide complete digital solutions to help your<br class="desktop-only"> business grow and succeed online.</p></div>
+          <div>
+            <span class="section-kicker">— &nbsp; MY SERVICES &nbsp; —</span>
+            <h2>What <span>I Do</span></h2>
+            <p>I provide complete digital solutions to help your<br class="desktop-only"> business grow and succeed online.</p>
+          </div>
           <div class="hand-note">Turn Your Ideas Into<br>Digital Success <span>↘</span></div>
         </div>
+
         <div class="service-grid">
-          <article class="service-card"><span class="service-icon social">▣</span><h3>Social Media Marketing</h3><p>Grow your brand with effective social media strategies &amp; content.</p><a href="#contact" aria-label="Social Media Marketing details">➜</a></article>
-          <article class="service-card"><span class="service-icon facebook">f</span><h3>Facebook Add Campaign</h3><p>Target the right audience with high-converting ad campaigns.</p><a href="#contact" aria-label="Facebook Add Campaign details">➜</a></article>
-          <article class="service-card"><span class="service-icon seo">⌕</span><h3>Website Seo Experts</h3><p>Rank higher on Google &amp; get more organic traffic.</p><a href="#contact" aria-label="Website SEO details">➜</a></article>
-          <article class="service-card"><span class="service-icon ads">⚑</span><h3>Digital Marketing &amp;<br>Facebook Ads</h3><p>Complete digital marketing for business growth.</p><a href="#contact" aria-label="Digital Marketing details">➜</a></article>
-          <article class="service-card"><span class="service-icon cpa">CPA</span><h3>CPA Marketing</h3><p>Earn more with high-converting offers and proven strategies.</p><a href="#contact" aria-label="CPA Marketing details">➜</a></article>
-          <article class="service-card"><span class="service-icon web">▣</span><h3>Website Development</h3><p>Modern, responsive &amp; fast websites for your business.</p><a href="#contact" aria-label="Website Development details">➜</a></article>
-          <article class="service-card"><span class="service-icon optimize">▥</span><h3>SEO &amp; Website Optimization</h3><p>Improve visibility, speed and performance.</p><a href="#contact" aria-label="SEO Optimization details">➜</a></article>
-          <a class="service-card work-card" href="#contact"><span class="rocket">🚀</span><h3>Let’s Work<br>Together</h3><p>Your success is my priority.</p><span class="round-arrow">➜</span></a>
+          <article class="service-card">
+            <span class="service-icon social">▣</span>
+            <h3>Social Media Marketing</h3>
+            <p>Grow your brand with effective social media strategies &amp; content.</p>
+            <a href="#contact" aria-label="Social Media Marketing details">➜</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon facebook">f</span>
+            <h3>Facebook Ads Campaign</h3>
+            <p>Target the right audience with high-converting ad campaigns.</p>
+            <a href="#contact" aria-label="Facebook Ads Campaign details">➜</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon seo">⌕</span>
+            <h3>Website SEO</h3>
+            <p>Improve search visibility and attract more organic traffic.</p>
+            <a href="#contact" aria-label="Website SEO details">➜</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon ads">⚑</span>
+            <h3>Digital Marketing &amp;<br>Facebook Ads</h3>
+            <p>Complete digital marketing solutions for business growth.</p>
+            <a href="#contact" aria-label="Digital Marketing details">➜</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon cpa">CPA</span>
+            <h3>CPA Marketing</h3>
+            <p>Promote relevant offers with focused campaigns and strategies.</p>
+            <a href="#contact" aria-label="CPA Marketing details">➜</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon web">▣</span>
+            <h3>Website Development</h3>
+            <p>Modern, responsive &amp; fast websites for your business.</p>
+            <a href="#contact" aria-label="Website Development details">➜</a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon optimize">▥</span>
+            <h3>SEO &amp; Website Optimization</h3>
+            <p>Improve website visibility, speed and performance.</p>
+            <a href="#contact" aria-label="SEO Optimization details">➜</a>
+          </article>
+
+          <a class="service-card work-card" href="#contact">
+            <span class="rocket">🚀</span>
+            <h3>Let’s Work<br>Together</h3>
+            <p>Your success is my priority.</p>
+            <span class="round-arrow">➜</span>
+          </a>
         </div>
       </div>
     </section>
@@ -65,53 +151,105 @@
     <section class="about" id="about">
       <div class="container about-layout">
         <div class="about-photo">
-  <img src="https://sheikhsalman58.github.io/about-portrait.jpg" alt="Sheikh Salman">
-  <span>Sheikh Salman</span>
-</div>
-        <div class="about-copy"><span class="section-kicker">— &nbsp; ABOUT ME &nbsp; —</span><h2>I’m <span>Sheikh Salman</span></h2><p>I'm a professional Digital Marketer, CPA Marketer and Web Developer with a passion for helping businesses grow online. I specialize in social media marketing, Facebook ads, CPA marketing and modern website development. My goal is to deliver quality work and bring real results to my clients.</p><div class="about-actions"><a class="button button-primary" href="#contact">➤ &nbsp; Hire Me</a><a class="button button-outline" href="#portfolio">▣ &nbsp; View Portfolio</a></div></div>
+          <img src="https://sheikhsalman58.github.io/about-portrait.jpg" alt="Sheikh Salman" loading="lazy">
+          <span>Sheikh Salman</span>
+        </div>
+
+        <div class="about-copy">
+          <span class="section-kicker">— &nbsp; ABOUT ME &nbsp; —</span>
+          <h2>I’m <span>Sheikh Salman</span></h2>
+          <p>I'm a Digital Marketer, CPA Marketer and Web Developer with a passion for helping businesses grow online. I specialize in social media marketing, Facebook ads, CPA marketing and modern website development. My goal is to deliver quality work and help my clients achieve their goals.</p>
+          <div class="about-actions">
+            <a class="button button-primary" href="#contact">➤ &nbsp; Hire Me</a>
+            <a class="button button-outline" href="#portfolio">▣ &nbsp; View Portfolio</a>
+          </div>
+        </div>
+
         <div class="about-services">
           <div><span class="mini-icon pink">⚑</span><p><b>Social Media Marketing</b><small>Build your brand presence</small></p></div>
           <div><span class="mini-icon blue">f</span><p><b>Facebook Ads Campaign</b><small>Get more leads &amp; sales</small></p></div>
-          <div><span class="mini-icon green">CPA</span><p><b>CPA Marketing</b><small>High-converting offers</small></p></div>
+          <div><span class="mini-icon green">CPA</span><p><b>CPA Marketing</b><small>Promote relevant offers</small></p></div>
           <div><span class="mini-icon purple">▣</span><p><b>Website Development</b><small>Modern &amp; responsive</small></p></div>
-          <div><span class="mini-icon orange">⌕</span><p><b>SEO &amp; Website Optimization</b><small>Rank higher on Google</small></p></div>
+          <div><span class="mini-icon orange">⌕</span><p><b>SEO &amp; Website Optimization</b><small>Improve search visibility</small></p></div>
         </div>
       </div>
     </section>
 
     <section class="stats">
-      <div class="container stats-grid"><div><span>👥</span><p><b>50+</b><small>Happy Clients</small></p></div><div><span>📁</span><p><b>100+</b><small>Projects Completed</small></p></div><div><span>▦</span><p><b>3+</b><small>Years Experience</small></p></div><div><span>★</span><p><b>100%</b><small>Client Satisfaction</small></p></div></div>
+      <div class="container stats-grid">
+        <div><span>👥</span><p><b>50+</b><small>Happy Clients</small></p></div>
+        <div><span>📁</span><p><b>100+</b><small>Projects Completed</small></p></div>
+        <div><span>▦</span><p><b>3+</b><small>Years Experience</small></p></div>
+        <div><span>★</span><p><b>100%</b><small>Client Satisfaction</small></p></div>
+      </div>
     </section>
 
     <section class="portfolio section-light" id="portfolio">
       <div class="container">
-        <div class="portfolio-heading"><div><span class="section-kicker">— &nbsp; MY PORTFOLIO &nbsp; —</span><h2>Latest Work</h2><p>Here are some of my recent projects. Check out my work<br class="desktop-only"> and see how I help businesses grow.</p></div><a class="button button-small" href="#contact">View All Portfolio</a></div>
-        <div class="portfolio-grid"
-<img
-  src="https://raw.githubusercontent.com/sheikhsalman58/sheikhsalman58.github.io/main/a_clean_modern_portfolio_section_graphic_a_webpa.png"
-  alt="CPA Marketer Sheikh Salman Portfolio - Facebook Ads, Website Development, SEO and Digital Marketing"
-  style="grid-column:1/-1; width:100%; height:auto; display:block; border-radius:15px;"
-  loading="lazy">
- </div></a>
+        <div class="portfolio-heading">
+          <div>
+            <span class="section-kicker">— &nbsp; MY PORTFOLIO &nbsp; —</span>
+            <h2>Latest Work</h2>
+            <p>Here are some of my recent projects. Check out my work<br class="desktop-only"> and see how I help businesses grow.</p>
+          </div>
+          <a class="button button-small" href="#contact">View All Portfolio</a>
+        </div>
+
+        <div class="portfolio-grid">
+          <img
+            src="https://raw.githubusercontent.com/sheikhsalman58/sheikhsalman58.github.io/main/a_clean_modern_portfolio_section_graphic_a_webpa.png"
+            alt="CPA Marketer Sheikh Salman portfolio featuring Facebook Ads, Website Development, SEO and Digital Marketing"
+            loading="lazy">
         </div>
       </div>
     </section>
 
-    <section class="contact-strip" id="contact"><div class="container contact-inner"><span class="paper-plane">➤</span><div><h2>Ready to Grow Your Business?</h2><p>Let’s discuss your project and turn your goals into reality.</p></div><div class="contact-actions"><a class="button button-primary" href="https://wa.me/8801337178933" target="_blank" rel="noopener">➤ &nbsp; Hire Me</a><a class="button button-outline" href="mailto:sheikhsalman5896@gmail.com">✉ &nbsp; Contact Me</a></div></div></section>
+    <section class="contact-strip" id="contact">
+      <div class="container contact-inner">
+        <span class="paper-plane">➤</span>
+        <div>
+          <h2>Ready to Grow Your Business?</h2>
+          <p>Let’s discuss your project and turn your goals into reality.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://wa.me/8801337178933" target="_blank" rel="noopener noreferrer">➤ &nbsp; Hire Me</a>
+          <a class="button button-outline" href="mailto:sheikhsalman5896@gmail.com">✉ &nbsp; Contact Me</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer" id="blog"><div class="container footer-inner"><p>© 2025 CPA Marketer Sheikh Salman. All Rights Reserved.</p><div class="social-links"><a href="https://www.facebook.com/share/1DzLzzi6yG/" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="mailto:sheikhsalman5896@gmail.com" aria-label="Email">✉</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="WhatsApp">◉</a></div></div></footer>
+  <footer class="footer" id="blog">
+    <div class="container footer-inner">
+      <p>© 2026 CPA Marketer Sheikh Salman. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/1DzLzzi6yG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        <a href="mailto:sheikhsalman5896@gmail.com" aria-label="Email">✉</a>
+        <a href="#contact" aria-label="LinkedIn contact">in</a>
+        <a href="https://wa.me/8801337178933" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">◉</a>
+      </div>
+    </div>
+  </footer>
+
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.main-nav');
-    toggle.addEventListener('click', () => {
-      const opened = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(opened));
-    });
-    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }));
+    (() => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.main-nav');
+
+      if (!toggle || !nav) return;
+
+      toggle.addEventListener('click', () => {
+        const opened = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(opened));
+      });
+
+      nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
   </script>
 </body>
 </html>
