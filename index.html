@@ -1,220 +1,113 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WX9LF2BPZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5WX9LF2BPZ');
-  </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sheikh Salman — CPA Marketer, Digital Marketer and Web Developer. Digital marketing, Facebook Ads, CPA marketing and website development.">
-  <meta name="keywords" content="CPA Marketer Sheikh Salman, CPA Marketing, Digital Marketing, Facebook Ads, Website Development, Bangladesh">
-  <meta name="author" content="Sheikh Salman">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#031a30">
-
-  <title>Sheikh Salman | CPA Marketer & Digital Marketer</title>
-  <link rel="canonical" href="https://sheikhsalman58.github.io/">
-  <meta property="og:title" content="Sheikh Salman | CPA Marketer & Digital Marketer">
-  <meta property="og:description" content="Digital marketing, CPA marketing, Facebook Ads and website development.">
-  <meta property="og:url" content="https://sheikhsalman58.github.io/">
-  <meta property="og:type" content="website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CPA Marketer Sheikh Salman — Digital Marketing, Facebook Ads, CPA Marketing and Website Development.">
+  <meta name="theme-color" content="#031a2d">
+  <title>CPA Marketer Sheikh Salman | Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Sheikh Salman",
-    "jobTitle":"CPA Marketer, Digital Marketer and Web Developer",
-    "email":"mailto:sheikhsalman5896@gmail.com",
-    "url":"https://sheikhsalman58.github.io/",
-    "sameAs":["https://www.facebook.com/profile.php?id=61594577422880"]
-  }
-  </script>
 </head>
 <body>
   <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="#home" aria-label="Sheikh Salman home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="CPA Marketer Sheikh Salman home">
         <span class="brand-mark">SS</span>
         <span class="brand-copy"><strong>CPA Marketer</strong><b>Sheikh Salman</b><small>Digital Marketing | CPA Marketing | Web Development</small></span>
       </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <nav class="main-nav" id="mainNav">
-        <a class="active" href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
       </nav>
-      <a class="nav-cta" href="#contact">➤ <span>Hire Me</span></a>
+      <a class="button button-primary nav-hire" href="#contact">➤ &nbsp; Hire Me</a>
     </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-shade"></div>
-      <div class="container hero-content">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
         <div class="hero-copy">
-          <span class="availability"><i></i> Freelance Digital Marketer</span>
-          <h1>CPA Marketer<br><em>Sheikh Salman</em></h1>
-          <h2>Digital Marketing <span>|</span> Facebook Ads <span>|</span> Website Development</h2>
-          <p>I help businesses grow online with result-driven digital marketing, CPA marketing, Facebook ads and modern website solutions.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">➤ &nbsp; Hire Me</a>
-            <a class="btn btn-outline" href="#portfolio">▣ &nbsp; View Portfolio</a>
-          </div>
-          <div class="hero-benefits">
-            <div><b>◎</b><span>More<br>Traffic</span></div>
-            <div><b>↗</b><span>Higher<br>Sales</span></div>
-            <div><b>⬡</b><span>Trusted<br>Service</span></div>
-            <div><b>◷</b><span>On-Time<br>Delivery</span></div>
+          <span class="eyebrow"><i></i> Freelance Digital Marketer</span>
+          <h1>CPA Marketer<br><span>Sheikh Salman</span></h1>
+          <p class="hero-specialties">Digital Marketing&nbsp; | &nbsp;Facebook Ads&nbsp; | &nbsp;Website Development</p>
+          <p class="hero-description">I help businesses grow online with result-driven digital marketing, CPA marketing, Facebook ads and modern website solutions.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#contact">➤ &nbsp; Hire Me</a><a class="button button-outline" href="#portfolio">▣ &nbsp; View Portfolio</a></div>
+          <div class="benefits">
+            <div><span>◎</span><p>More<br>Traffic</p></div><div><span>♧</span><p>Higher<br>Sales</p></div><div><span>⬡</span><p>Trusted<br>Service</p></div><div><span>◷</span><p>On-Time<br>Delivery</p></div>
           </div>
         </div>
-        <img class="hero-portrait" src="profile-original.jpg" alt="Sheikh Salman">
+        <div class="hero-person" role="img" aria-label="Digital marketer working at a laptop"></div>
       </div>
     </section>
 
     <section class="services section-light" id="services">
       <div class="container">
         <div class="section-heading">
-          <div><span class="eyebrow">— MY SERVICES —</span><h2>What <em>I Do</em></h2><p>I provide complete digital solutions to help your<br class="desktop-only"> business grow and succeed online.</p></div>
-
+          <div><span class="section-kicker">— &nbsp; MY SERVICES &nbsp; —</span><h2>What <span>I Do</span></h2><p>I provide complete digital solutions to help your<br class="desktop-only"> business grow and succeed online.</p></div>
+          <div class="hand-note">Turn Your Ideas Into<br>Digital Success <span>↘</span></div>
         </div>
         <div class="service-grid">
-          <article class="service-card"><span class="service-icon icon-social">▣</span><h3>Social Media Marketing</h3><p>Grow your brand with effective social media strategies &amp; content.</p><a href="#contact" aria-label="Ask about Social Media Marketing">➜</a></article>
-          <article class="service-card"><span class="service-icon icon-facebook">f</span><h3>Facebook Ad Campaign</h3><p>Target the right audience with high-converting ad campaigns.</p><a href="#contact" aria-label="Ask about Facebook Ad Campaign">➜</a></article>
-          <article class="service-card"><span class="service-icon icon-seo">⌕</span><h3>Website SEO Experts</h3><p>Rank higher on Google &amp; get more organic traffic.</p><a href="#contact" aria-label="Ask about Website SEO">➜</a></article>
-          <article class="service-card"><span class="service-icon icon-ads">📣</span><h3>Digital Marketing &amp; Facebook Ads</h3><p>Complete digital marketing solutions for business growth.</p><a href="#contact" aria-label="Ask about Digital Marketing">➜</a></article>
-          <article class="service-card"><span class="service-icon icon-cpa">CPA</span><h3>CPA Marketing</h3><p>Earn more with high-converting offers and proven strategies.</p><a href="#contact" aria-label="Ask about CPA Marketing">➜</a></article>
-          <article class="service-card"><span class="service-icon icon-web">▣</span><h3>Website Development</h3><p>Modern, responsive &amp; fast websites for your business.</p><a href="#contact" aria-label="Ask about Website Development">➜</a></article>
-          <article class="service-card"><span class="service-icon icon-growth">▥</span><h3>SEO &amp; Website Optimization</h3><p>Improve visibility, speed and performance.</p><a href="#contact" aria-label="Ask about SEO Optimization">➜</a></article>
-          <a class="service-card service-invite" href="#contact"><span class="rocket">🚀</span><h3>Let’s Work<br>Together</h3><p>Your success is my priority.</p><span class="round-arrow">➜</span></a>
+          <article class="service-card"><span class="service-icon social">▣</span><h3>Social Media Marketing</h3><p>Grow your brand with effective social media strategies &amp; content.</p><a href="#contact" aria-label="Social Media Marketing details">➜</a></article>
+          <article class="service-card"><span class="service-icon facebook">f</span><h3>Facebook Add Campaign</h3><p>Target the right audience with high-converting ad campaigns.</p><a href="#contact" aria-label="Facebook Add Campaign details">➜</a></article>
+          <article class="service-card"><span class="service-icon seo">⌕</span><h3>Website Seo Experts</h3><p>Rank higher on Google &amp; get more organic traffic.</p><a href="#contact" aria-label="Website SEO details">➜</a></article>
+          <article class="service-card"><span class="service-icon ads">⚑</span><h3>Digital Marketing &amp;<br>Facebook Ads</h3><p>Complete digital marketing for business growth.</p><a href="#contact" aria-label="Digital Marketing details">➜</a></article>
+          <article class="service-card"><span class="service-icon cpa">CPA</span><h3>CPA Marketing</h3><p>Earn more with high-converting offers and proven strategies.</p><a href="#contact" aria-label="CPA Marketing details">➜</a></article>
+          <article class="service-card"><span class="service-icon web">▣</span><h3>Website Development</h3><p>Modern, responsive &amp; fast websites for your business.</p><a href="#contact" aria-label="Website Development details">➜</a></article>
+          <article class="service-card"><span class="service-icon optimize">▥</span><h3>SEO &amp; Website Optimization</h3><p>Improve visibility, speed and performance.</p><a href="#contact" aria-label="SEO Optimization details">➜</a></article>
+          <a class="service-card work-card" href="#contact"><span class="rocket">🚀</span><h3>Let’s Work<br>Together</h3><p>Your success is my priority.</p><span class="round-arrow">➜</span></a>
         </div>
       </div>
     </section>
 
-    <section class="about-section" id="about">
+    <section class="about" id="about">
       <div class="container about-layout">
-        <div class="about-photo"><img src="profile-original.jpg" alt="Sheikh Salman"></div>
-        <div class="about-copy">
-          <span class="eyebrow">— ABOUT ME —</span>
-          <h2>I’m <em>Sheikh Salman</em></h2>
-          <p>I'm a professional Digital Marketer, CPA Marketer and Web Developer with a passion for helping businesses grow online. I specialize in social media marketing, Facebook ads, CPA marketing and modern website development. My goal is to deliver quality work and bring real results to my clients.</p>
-          <div class="about-actions"><a class="btn btn-primary" href="#contact">➤ &nbsp; Hire Me</a><a class="btn btn-outline" href="#portfolio">▣ &nbsp; View Portfolio</a></div>
-        </div>
-        <div class="skill-list">
-          <div><i class="skill-icon pink">📣</i><span><b>Social Media Marketing</b><small>Build your brand presence</small></span></div>
-          <div><i class="skill-icon blue">f</i><span><b>Facebook Ads Campaign</b><small>Get more leads &amp; sales</small></span></div>
-          <div><i class="skill-icon green">CPA</i><span><b>CPA Marketing</b><small>High-converting offers</small></span></div>
-          <div><i class="skill-icon purple">▣</i><span><b>Website Development</b><small>Modern &amp; responsive</small></span></div>
-          <div><i class="skill-icon orange">⌕</i><span><b>SEO &amp; Website Optimization</b><small>Rank higher on Google</small></span></div>
+        <div class="about-photo"><img src="assets/about-portrait.jpg" alt="Sheikh Salman"><span>Sheikh Salman</span></div>
+        <div class="about-copy"><span class="section-kicker">— &nbsp; ABOUT ME &nbsp; —</span><h2>I’m <span>Sheikh Salman</span></h2><p>I'm a professional Digital Marketer, CPA Marketer and Web Developer with a passion for helping businesses grow online. I specialize in social media marketing, Facebook ads, CPA marketing and modern website development. My goal is to deliver quality work and bring real results to my clients.</p><div class="about-actions"><a class="button button-primary" href="#contact">➤ &nbsp; Hire Me</a><a class="button button-outline" href="#portfolio">▣ &nbsp; View Portfolio</a></div></div>
+        <div class="about-services">
+          <div><span class="mini-icon pink">⚑</span><p><b>Social Media Marketing</b><small>Build your brand presence</small></p></div>
+          <div><span class="mini-icon blue">f</span><p><b>Facebook Ads Campaign</b><small>Get more leads &amp; sales</small></p></div>
+          <div><span class="mini-icon green">CPA</span><p><b>CPA Marketing</b><small>High-converting offers</small></p></div>
+          <div><span class="mini-icon purple">▣</span><p><b>Website Development</b><small>Modern &amp; responsive</small></p></div>
+          <div><span class="mini-icon orange">⌕</span><p><b>SEO &amp; Website Optimization</b><small>Rank higher on Google</small></p></div>
         </div>
       </div>
     </section>
 
     <section class="stats">
-      <div class="container stats-grid">
-        <div><b>👥</b><strong>50+</strong><span>Happy Clients</span></div>
-        <div><b>📁</b><strong>100+</strong><span>Projects Completed</span></div>
-        <div><b>▦</b><strong>3+</strong><span>Years Experience</span></div>
-        <div><b>★</b><strong>100%</strong><span>Client Satisfaction</span></div>
-      </div>
+      <div class="container stats-grid"><div><span>👥</span><p><b>50+</b><small>Happy Clients</small></p></div><div><span>📁</span><p><b>100+</b><small>Projects Completed</small></p></div><div><span>▦</span><p><b>3+</b><small>Years Experience</small></p></div><div><span>★</span><p><b>100%</b><small>Client Satisfaction</small></p></div></div>
     </section>
 
     <section class="portfolio section-light" id="portfolio">
       <div class="container">
-        <div class="portfolio-heading"><div><span class="eyebrow">— MY PORTFOLIO —</span><h2>Latest Work</h2><p>Here are some of my recent projects. Check out my work<br class="desktop-only"> and see how I help businesses grow.</p></div><a class="btn btn-small-outline" href="#contact">View All Portfolio</a></div>
+        <div class="portfolio-heading"><div><span class="section-kicker">— &nbsp; MY PORTFOLIO &nbsp; —</span><h2>Latest Work</h2><p>Here are some of my recent projects. Check out my work<br class="desktop-only"> and see how I help businesses grow.</p></div><a class="button button-small" href="#contact">View All Portfolio</a></div>
         <div class="portfolio-grid">
-          <a class="work-card work-one" href="#contact"><span class="work-plus">+</span><div><b>Facebook Ads<br>Campaign</b><small>Digital Marketing</small></div></a>
-          <a class="work-card work-two" href="#contact"><span class="work-plus">+</span><div><b>Website Development</b><small>Web development</small></div></a>
-          <a class="work-card work-three" href="#contact"><span class="work-plus">+</span><div><b>SEO Optimization</b><small>SEO &amp; Website</small></div></a>
-          <a class="work-card work-four" href="#contact"><span class="work-plus">+</span><div><b>Digital Marketing</b><small>Digital Marketing</small></div></a>
+          <a class="portfolio-card" href="#contact"><img src="assets/portfolio-facebook.jpg" alt="Facebook Ads campaign project"><span class="plus">+</span><div><b>Facebook Ads</b><small>Campaign</small></div></a>
+          <a class="portfolio-card" href="#contact"><img src="assets/portfolio-web.jpg" alt="Website development project"><span class="plus">+</span><div><b>Website Development</b><small>Web development</small></div></a>
+          <a class="portfolio-card" href="#contact"><img src="assets/portfolio-seo.jpg" alt="SEO optimization project"><span class="plus">+</span><div><b>SEO Optimization</b><small>SEO &amp; Website</small></div></a>
+          <a class="portfolio-card" href="#contact"><img src="assets/portfolio-marketing.jpg" alt="Digital marketing project"><span class="plus">+</span><div><b>Digital Marketing</b><small>Digital Marketing</small></div></a>
         </div>
       </div>
     </section>
 
-    <section class="blog-strip" id="blog"><div class="container blog-inner"><span class="eyebrow">— INSIGHTS —</span><p>Need practical ideas to grow your business online?</p><a href="#contact">Let’s discuss your goals ↗</a></div></section>
-
-    <section class="contact-cta" id="contact">
-      <div class="container cta-inner"><div class="cta-copy"><span class="cta-plane">➤</span><span><b>Ready to Grow Your Business?</b><small>Let's discuss your project and turn your goals into reality.</small></span></div><div class="cta-actions"><a class="btn btn-primary" href="https://wa.me/8801755015896" target="_blank" rel="noopener">➤ &nbsp; Hire Me</a></div></div>
-    </section>
+    <section class="contact-strip" id="contact"><div class="container contact-inner"><span class="paper-plane">➤</span><div><h2>Ready to Grow Your Business?</h2><p>Let’s discuss your project and turn your goals into reality.</p></div><div class="contact-actions"><a class="button button-primary" href="https://wa.me/8801337178933" target="_blank" rel="noopener">➤ &nbsp; Hire Me</a><a class="button button-outline" href="mailto:sheikhsalman5896@gmail.com">✉ &nbsp; Contact Me</a></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 CPA Marketer Sheikh Salman. All Rights Reserved.</span><div class="social-links"><a href="https://www.facebook.com/profile.php?id=61594577422880" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="#contact" aria-label="LinkedIn">in</a><a href="https://wa.me/8801755015896" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a></div></div></footer>
-
-  <!-- Firebase Google Login -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-    import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyDaEc9Z32tiohg7aHGhgVRuJRNRWa9Sakk",
-      authDomain: "salman-website-bdbde.firebaseapp.com",
-      projectId: "salman-website-bdbde",
-      storageBucket: "salman-website-bdbde.firebasestorage.app",
-      messagingSenderId: "86115008155",
-      appId: "1:86115008155:web:a94764872c69e56540903e"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
-
-    // Add a compact login control to the header without changing the reference layout.
-    const navWrap = document.querySelector(".nav-wrap");
-    const loginArea = document.createElement("div");
-    loginArea.className = "auth-area";
-    navWrap.insertBefore(loginArea, document.querySelector(".nav-cta"));
-
-    function renderSignedOut() {
-      loginArea.innerHTML = '<button class="login-link" type="button">Login</button>';
-      loginArea.querySelector("button").addEventListener("click", async () => {
-        try { await signInWithPopup(auth, provider); }
-        catch (error) { console.error(error); alert("Google Login failed: " + error.message); }
-      });
-    }
-
-    function renderSignedIn(user) {
-      const safeName = (user.displayName || user.email || "Account").replace(/[<>&"]/g, "");
-      loginArea.innerHTML = `<span class="user-label">${safeName}</span><button class="login-link" type="button">Logout</button>`;
-      loginArea.querySelector("button").addEventListener("click", async () => {
-        try { await signOut(auth); } catch (error) { console.error(error); }
-      });
-    }
-
-    onAuthStateChanged(auth, user => user ? renderSignedIn(user) : renderSignedOut());
-
-    const menuToggle = document.getElementById("menuToggle");
-    const mainNav = document.getElementById("mainNav");
-    menuToggle.addEventListener("click", () => {
-      const isOpen = mainNav.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
+  <footer class="footer" id="blog"><div class="container footer-inner"><p>© 2025 CPA Marketer Sheikh Salman. All Rights Reserved.</p><div class="social-links"><a href="https://www.facebook.com/share/1DzLzzi6yG/" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="mailto:sheikhsalman5896@gmail.com" aria-label="Email">✉</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="WhatsApp">◉</a></div></div></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const opened = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(opened));
     });
-    mainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-      mainNav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     }));
   </script>
-
-  <!-- Advertisement code preserved -->
-  <script>
-    atOptions = {
-      'key': 'f97a3e2ea511f2152ef43f59ae4a1c7b',
-      'format': 'iframe',
-      'height': 60,
-      'width': 468,
-      'params': {}
-    };
-  </script>
-  <script src="https://www.highrevenueformat.com/f97a3e2ea511f2152ef43f59ae4a1c7b/invoke.js"></script>
-  <script src="https://pl31475620.profitableratecpmnetwork.com/09/39/ed/0939eda44af1a61722742ae70c039506.js"></script>
 </body>
 </html>
